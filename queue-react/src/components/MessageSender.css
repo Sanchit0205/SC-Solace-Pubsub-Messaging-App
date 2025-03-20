@@ -1,0 +1,52 @@
+/* MessageSender.css */
+.sender-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .box {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #007bff;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  
+  .message-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .send-button {
+    background: #007bff;
+    color: white;
+  }
+  
+  .send-button:hover {
+    background: #0056b3;
+  }
+  

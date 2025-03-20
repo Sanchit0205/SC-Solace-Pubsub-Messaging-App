@@ -1,0 +1,95 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Styling for MessageSender and MessageReceiver */
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.button-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.start-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.stop-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.refresh-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.message-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.message-list li {
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.no-messages {
+  color: gray;
+  font-style: italic;
+}
+
+/* Receiver Status */
+.status {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.active {
+  color: green;
+}
+
+.inactive {
+  color: red;
+}

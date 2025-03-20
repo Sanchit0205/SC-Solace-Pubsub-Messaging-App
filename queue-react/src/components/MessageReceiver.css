@@ -1,0 +1,128 @@
+/* MessageReceiver.css */
+.receiver-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #28a745;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.active {
+  color: green;
+}
+
+.inactive {
+  color: red;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.button {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start-button {
+  background: #28a745;
+  color: white;
+}
+
+.start-button:hover {
+  background: #218838;
+}
+
+.stop-button {
+  background: #dc3545;
+  color: white;
+}
+
+.stop-button:hover {
+  background: #c82333;
+}
+
+.message-scroll-container {
+  height: 200px;         /* Adjust height as needed */
+  overflow-y: auto;      /* Enables vertical scrolling */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  margin-top: 15px;
+}
+
+.message-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.message-item {
+  position: relative;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.message-text {
+  font-size: 14px;
+}
+
+/* Tooltip: hidden by default */
+.tooltip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 10px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+/* Show tooltip on hover */
+.message-item:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.no-messages {
+  color: #666;
+  font-style: italic;
+}
