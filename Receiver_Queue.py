@@ -14,10 +14,11 @@ app = Flask(__name__)
 CORS(app)
 
 # Solace Configuration
-SOLACE_HOST = os.getenv("SOLACE_HOST")
-SOLACE_VPN = os.getenv("SOLACE_VPN")
-SOLACE_USERNAME = os.getenv("SOLACE_USERNAME")
-SOLACE_PASSWORD = os.getenv("SOLACE_PASSWORD")
+SOLACE_HOST = os.getenv("SOLACE_HOST") # Your Solace host URL
+SOLACE_VPN = os.getenv("SOLACE_VPN")  # Your Solace VPN name
+SOLACE_USERNAME = os.getenv("SOLACE_USERNAME") # Your Solace username  
+SOLACE_PASSWORD = os.getenv("SOLACE_PASSWORD") # Your Solace password 
+
 QUEUE_NAME = "persistent-message-queue"  # Queue name
 
 # Broker Properties
@@ -29,7 +30,7 @@ broker_props = {
 }
 
 # Transport Security
-transport_security = TLS.create().with_certificate_validation(True, False, r"\TrustStore")
+transport_security = TLS.create().with_certificate_validation(True, False, r"\TrustStore") #path of trustStore
 
 # Initialize Messaging Service
 messaging_service = MessagingService.builder().from_properties(broker_props) \
