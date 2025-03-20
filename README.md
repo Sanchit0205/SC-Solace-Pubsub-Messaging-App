@@ -44,14 +44,22 @@ A **real-time messaging system** using **Solace PubSub+** with persistent queues
 1. **Install dependencies:**  
 ```bash
 pip install -r requirements.txt
-
+```
+2. **Run Flask servers:**
+```bash
 python Publisher_Queue.py   # Port 5001  
 python Receiver_Queue.py    # Port 5002  
-
-cd queue-react  
-npm install  
-
-npm start
-
 ```
 
+### ⚙️ **Frontend (React)**
+1. **Install dependencies:**
+```bash
+cd queue-react  
+npm install
+```
+
+2. **Start the app:**
+```bash
+npm start
+```
+** Ready To Go 🎉**
